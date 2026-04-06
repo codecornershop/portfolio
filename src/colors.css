@@ -1,0 +1,35 @@
+:root {
+/*==========LIGHT==========*/
+/* Pastel Earth - Light */
+  --pe-bg:#f3e4c9;
+  --pe-bg2: #bfa28c;
+  --pe-fg: #4e492c;
+  --pe-accent: #babf94;
+
+/* Pastel Blueberry - Light */
+  --pbb-bg: #27232f;
+  --pbb-bg2: #9f8383;
+  --pbb-fg : #c8aaaa;
+  --pbb-accent: #ffdab3;
+
+
+/*==========DARK==========*/
+/* Emerald Harvest Twilight - dark */
+  --eht-bg: #0b0f08;
+  --eht-bg2: #283f23;
+  --eht-fg: #acbd5e;
+  --eht-accent: #b78449;
+  --eht-primary: #397234;
+  --eht-secondary: #3f2617;
+
+/* Frigus */
+  --frig-bg: #45453c;
+  --frig-bg2: #6b5f5b;
+  --frig-fg: #c9dff3;
+  --frig-accent: #6061a9;
+  --frig-primary: #dedede;
+  --frig-secondary: #37444f;
+}
+
+
+

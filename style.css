@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #333, black);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 200px;
+    color: #eee;
+}
+
+h1 {
+    background: radial-gradient(wheat, silver);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.card {
+    width: 400px;
+    height: 550px;
+    margin: auto;
+    background-color: #eee;
+    border: 2px solid beige;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #555;
+}
+
+.card:hover {
+    width: 402px;
+    height: 552px;
+    box-shadow: 3px 3px 3px #555;
+}

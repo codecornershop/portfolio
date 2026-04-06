@@ -1,0 +1,88 @@
+@import "./colors.css";
+
+html {
+  box-sizing: border-box;
+}
+
+.portfolio {
+  background-image: url('assets/images/net2.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+header { 
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+h1, h2, p {
+  color: var(--pe-fg);
+}
+
+
+.service-grid {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.service-card {
+  width: 90%;
+  min-height: 200px;
+  margin: 1rem auto;
+  background-color: var(--pe-bg);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 0 var(--pe-fg);
+  align-self: center;
+}
+
+.service-card p, .service-card h3 {
+  color: var(--pe-fg)
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--pe-fg);
+  background-color: var(--pe-bg2);
+  padding: 4px;
+  border: 1px solid var(--pe-bg);
+  border-radius: 3px;
+  box-shadow: 2px 2px 7px 0 var(--pe-fg);
+}
+
+a {
+  text-decoration: none;
+  color: saddlebrown;
+}
+
+@media screen and (min-width: 746px) {
+  .service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .service-card {
+    height: 40vh;
+    margin: 1rem 1rem;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  .portfolio {
+    background-image: url('assets/images/netdark.webp');
+  }
+  .service-card {
+    background-color: var(--frig-bg); 
+    box-shadow: 3px 3px 5px 0 var(--frig-fg);
+  }
+
+  .service-card p, .service-card h3 {
+    color: var(--frig-fg)
+  } 
+  h1, h2, p {
+    color: var(--frig-fg);
+  }
+}
