@@ -4,12 +4,23 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
 .portfolio {
-  background-image: url('assets/images/net2.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 2px; 
+  text-align: left;
+  border: 1px solid #eaeaea;
+}
+
+.hero {
+  text-align: center;  
 }
 
 header { 
@@ -21,35 +32,89 @@ h1, h2, p {
   color: var(--pe-fg);
 }
 
+section {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.project-name {
+  font-weight: 500;
+  min-width: 180px;
+}
+
+.project-stack {
+  font-size: 0.85rem;
+  color: #666;
+  flex: 1;
+}
+
+.project-link {
+  font-size: 0.85rem;
+  color: saddlebrown;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.services {
+  text-align: left;
+}
 
 .service-grid {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .service-card {
-  width: 90%;
-  min-height: 200px;
-  margin: 1rem auto;
-  background-color: var(--pe-bg);
-  border-radius: 10px;
-  box-shadow: 3px 3px 5px 0 var(--pe-fg);
+  width: 100%;
+  min-height: auto;
+  margin: 0;
+  background: transparent;
+  border-bottom: 1px solid #eaeaea;
   align-self: center;
 }
 
-.service-card p, .service-card h3 {
-  color: var(--pe-fg)
+.service-card h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 .cta-button {
   display: inline-block;
   text-decoration: none;
   color: var(--pe-fg);
-  background-color: var(--pe-bg2);
+  background-color: #ccc;
   padding: 4px;
-  border: 1px solid var(--pe-bg);
   border-radius: 3px;
-  box-shadow: 2px 2px 7px 0 var(--pe-fg);
 }
 
 a {
@@ -57,26 +122,63 @@ a {
   color: saddlebrown;
 }
 
+footer {
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.footer-icons a {
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.footer-icons a:hover {
+  color: #2d2b26;
+}
+
+
+.footer-icons a:active {
+  color: #eaeaea;
+}
+
 @media screen and (min-width: 746px) {
   .service-grid {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
   }
 
   .service-card {
-    height: 40vh;
-    margin: 1rem 1rem;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .project-item {
+    gap: 1rem;
+  }
+
+  .portfolio {
+    padding: 2rem 2rem;
   }
 
 }
 
 @media (prefers-color-scheme: dark) {
   .portfolio {
-    background-image: url('assets/images/netdark.webp');
+    background: #444;
   }
   .service-card {
     background-color: var(--frig-bg); 
-    box-shadow: 3px 3px 5px 0 var(--frig-fg);
+  }
+
+  .cta-button {
+    background-color: var(--frig-bg);
+    color: var(--frig-fg)
   }
 
   .service-card p, .service-card h3 {
