@@ -11,7 +11,12 @@ const App: Component = () => {
       <header class="hero">
         <h1>{greeting}, I'm Dillon</h1>
         <p>I'm an aspiring full stack developer</p>
-        <a href="#contact" class="cta-button">Let's work together</a>
+        <a 
+          href="https://wa.me/27680483620?text=Hi%20Dillon%2C%20I%20saw%20your%20portfolio%20and%20I'd%20like%20to%20work%20with%20you" 
+          class="cta-button"
+          target="_blank"
+          rel="noopener noreferrer">
+        Let's work together</a>
       </header>
 
       {/*Services / What I offer*/}

@@ -111,15 +111,15 @@ section {
 .cta-button {
   display: inline-block;
   text-decoration: none;
-  color: var(--pe-fg);
-  background-color: #ccc;
+  color: #222;
+  background: #909090;
   padding: 4px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
-a {
+.cta-button:hover {
   text-decoration: none;
-  color: saddlebrown;
+  color: #555;
 }
 
 footer {
@@ -169,22 +169,55 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-  .portfolio {
-    background: #444;
-  }
-  .service-card {
-    background-color: var(--frig-bg); 
+  
+  body {
+    background: #1a1a1a;
   }
 
-  .cta-button {
-    background-color: var(--frig-bg);
-    color: var(--frig-fg)
+  .portfolio {
+    background: #1e1e1e;
+    border-color: #333;
+    box-shadow: none;
+  }
+
+  .service-card {
+    border-bottom-color: #333;
+    background: transparent;
+  }
+
+  .project-item {
+    border-bottom-color: #333;
+  }
+
+  .project-stack, .project-name {
+    color: #999;
+  }
+
+  a, .project-link {
+    color: #d4a373
+  }
+
+  a:hover, .project-link:hover {
+    color: #e6b8a2;
   }
 
   .service-card p, .service-card h3 {
-    color: var(--frig-fg)
-  } 
-  h1, h2, p {
-    color: var(--frig-fg);
+    color: #e0e0e0;
+  }
+
+  h1, h2, h3, p {
+    color: #e0e0e0;
+  }
+
+  footer {
+    border-top-color: #333;
+  }
+
+  .footer-links a {
+    color: #999;
+  }
+
+  .footer-links a:hover {
+    color: #d4a373;
   }
 }
