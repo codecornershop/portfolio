@@ -45,6 +45,11 @@ const App: Component = () => {
             <span class="project-stack">SolidJS - TypeScript</span>
             <a href="https://codecornershop.github.io/nails-by-phondy" target="_blank" class="project-link"> Live </a>
           </div>
+          <div class="project-item">
+            <span class="project-name">Pave it Neat</span>
+            <span class="project-stack">SolidJS - TypeScript</span>
+            <a href="https://codecornershop.github.io/pave-it-neat" target="_blank" class="project-link"> Live </a>
+          </div>
         </div>
       </section>
 
